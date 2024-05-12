@@ -28,7 +28,7 @@ export const checkAuth = (req: Request, res: Response, next: NextFunction) => {
   } catch (error) {
     return res.status(401).json({
       sucess: false,
-      message: "unathorized",
+      message: "unauthorized",
     });
   }
 };
